@@ -141,3 +141,21 @@ document.addEventListener("keydown", (event) => {
     document.body.classList.remove("menu-open");
   }
 });
+
+const reviewOpenButton = document.querySelector("[data-review-modal]");
+const reviewModal = document.getElementById("review-modal");
+const reviewCloseButtons = document.querySelectorAll("[data-review-close]");
+
+if (reviewOpenButton && reviewModal) {
+  reviewOpenButton.addEventListener("click", () => {
+    reviewModal.classList.add("active");
+    document.body.classList.add("menu-open");
+  });
+}
+
+reviewCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    reviewModal.classList.remove("active");
+    document.body.classList.remove("menu-open");
+  });
+});

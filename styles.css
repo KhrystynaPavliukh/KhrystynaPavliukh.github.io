@@ -1632,3 +1632,151 @@ h6 {
   background: var(--accent);
   width: 30px;
 }
+
+.reviews-section {
+  padding: 120px 30px;
+  background: linear-gradient(180deg, #fff 0%, #f8f2ef 100%);
+  overflow: hidden;
+}
+
+.reviews-inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.reviews-section h2 {
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 200;
+}
+
+.reviews-phone {
+  position: relative;
+  width: min(390px, 100%);
+  margin: 0 auto;
+}
+
+.reviews-phone-img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.reviews-phone-screen {
+  position: absolute;
+  top: 4.5%;
+  left: 4.7%;
+  width: 90.6%;
+  height: 91%;
+  padding: 92px 22px 34px;
+  border-radius: 42px;
+  overflow: hidden;
+  background: #fffaf7;
+  z-index: 2;
+}
+
+.review-card {
+  border: 1px solid rgba(219, 184, 174, 0.65);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.review-quote {
+  padding: 34px 28px 0;
+  font-family: "NS", serif;
+  font-size: 82px;
+  line-height: 0.65;
+  color: var(--accent);
+}
+
+.review-text {
+  padding: 0 28px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.review-open {
+  margin: 28px 28px 34px;
+  padding: 0 68px 12px 0;
+  border: 0;
+  border-bottom: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.review-open::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: -7px;
+  font-size: 34px;
+  letter-spacing: 0;
+}
+
+.review-author {
+  padding: 24px 28px;
+  border-top: 1px solid rgba(219, 184, 174, 0.65);
+}
+
+.review-author strong {
+  display: block;
+  font-family: "NS", serif;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.review-author span {
+  display: block;
+  margin-top: 10px;
+  color: var(--accent);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 900px) {
+  .reviews-section {
+    padding: 70px 20px;
+  }
+
+  .reviews-section h2 {
+    margin-bottom: 40px;
+  }
+
+  .reviews-phone {
+    width: min(360px, 100%);
+  }
+
+  .reviews-phone-screen {
+    padding: 82px 18px 30px;
+  }
+
+  .review-text {
+    font-size: 15px;
+    padding: 0 22px;
+  }
+
+  .review-quote {
+    padding: 30px 22px 0;
+  }
+
+  .review-open {
+    margin-left: 22px;
+  }
+
+  .review-author {
+    padding: 22px;
+  }
+
+  .review-author strong {
+    font-size: 28px;
+  }
+}
